@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:simple_auth_flutter_riverpod/src/features/authentication/presentation/account_screen_controller.dart';
 import 'package:simple_auth_flutter_riverpod/src/utils/async_value_ui.dart';
 
-/// Simple account screen showing some user info and a logout button.
 class AccountScreen extends ConsumerWidget {
   const AccountScreen({Key? key}) : super(key: key);
 
@@ -32,7 +31,7 @@ class AccountScreen extends ConsumerWidget {
               'Logout',
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .titleLarge!
                   .copyWith(color: Colors.white),
             ),
           ),
